@@ -12,9 +12,8 @@ import job from "./cron/cron.js";
 
 dotenv.config();
 
-connectDB("mongodb://127.0.0.1:27017/InstaApp").then(() =>
-	console.log("Mongodb connected")
-  );
+connectDB();
+  
   
 job.start();
 
